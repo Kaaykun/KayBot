@@ -4,7 +4,7 @@ import keras
 from keras.models import Sequential
 from keras.layers import Dense,Dropout
 
-from params import MODEL_PATH
+from backend.params import MODEL_PATH
 
 ########################################################################################
 
@@ -72,7 +72,6 @@ def load_local_model():
     model_path_on_disk = sorted(local_model_paths)[-1]
     model = keras.models.load_model(model_path_on_disk)
 
-    print(f"✅ Model loaded from local disk: {model_path_on_disk}")
     return model
 
 ########################################################################################
