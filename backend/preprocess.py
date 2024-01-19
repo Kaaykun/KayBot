@@ -5,7 +5,7 @@ import random
 import numpy as np
 from nltk.stem import WordNetLemmatizer
 
-from params import INTENTS_PATH, WORDS_PATH, CLASSES_PATH
+from backend.params import INTENTS_PATH, WORDS_PATH, CLASSES_PATH
 
 # Constants
 lemmatizer = WordNetLemmatizer()
