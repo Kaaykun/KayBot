@@ -130,7 +130,10 @@
             "tag": "Identity",
             "patterns": [
                 "Who are you",
-                "what are you"
+                "what are you",
+                "what is your name",
+                "whats your name",
+                "who am i talking to"
             ],
             "responses": [
                 "I am Kay, a Deep-Learning chatbot"

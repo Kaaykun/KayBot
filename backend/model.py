@@ -2,7 +2,6 @@ import os
 import glob
 import keras
 from keras.models import Sequential
-from keras.callbacks import EarlyStopping
 from keras.layers import Dense,Dropout
 
 from params import MODEL_PATH
@@ -11,8 +10,7 @@ from params import MODEL_PATH
 
 def initialize_model(X_train, y_train):
     """
-    Initialize a TensorFlow Keras model with a defined architecture and
-    an early stopping condition.
+    Initialize a TensorFlow Keras model with a defined architecture.
     """
     # Model architecture
     model=Sequential()
@@ -29,21 +27,17 @@ def initialize_model(X_train, y_train):
                   loss='categorical_crossentropy',
                   metrics=['accuracy'])
 
-    # Early stopping condition
-    early_stopping = EarlyStopping(monitor='accuracy', patience=10, restore_best_weights=True)
-
-    return model, early_stopping
+    return model
 
 ########################################################################################
 
-def train_model(model, X_train, y_train, early_stopping):
+def train_model(model, X_train, y_train):
     """
     Train a TensorFlow Keras model.
     """
     history = model.fit(X_train, y_train,
                         epochs=200,
                         batch_size=10,
-                        callbacks=[early_stopping],
                         verbose=-1)
 
     return history
@@ -78,6 +72,7 @@ def load_local_model():
     model_path_on_disk = sorted(local_model_paths)[-1]
     model = keras.models.load_model(model_path_on_disk)
 
+    print(f"✅ Model loaded from local disk: {model_path_on_disk}")
     return model
 
 ########################################################################################
