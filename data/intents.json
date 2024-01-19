@@ -95,7 +95,7 @@
                 "What support do you offer"
             ],
             "responses": [
-                "I am a general purpose chatbot. I am programmed to: \n 1. Chat with you. Try asking me for jokes or riddles! \n 2. Help remember the date and time. \n 3. Execute google searches for you. Use format 'google: your query' \n 4. Tell the current weather in any city. Use format 'weather: city name' \n 5. Get you the top 10 trending news in India. Use keywords 'Latest News' \n 6. Get you the global top 10 trending songs. Type 'songs' \n 7. Set a timer for you. Enter 'set a timer: minutes' \n 8. Get the present Covid stats for any country. Use 'covid 19: world' or 'covid 19: country name' \n For suggestions to help me improve, send an email to jaris.a.fenner@gmail.com. Thank you! "
+                "I am a general purpose chatbot. I am programmed to: \n 1. Chat with you. Try asking me for jokes or riddles! \n 2. Help remember the date and time. \n 3. Execute google searches for you. Use format 'google: your query' \n 4. Tell the current weather in any city. Use format 'weather: city name' \n 5. Get you the top 10 trending news in India. Use keywords 'Latest News' \n 6. Get you the global top 10 trending songs. Type 'songs' \n 7. Set a timer for you. Enter 'set a timer: minutes' \n For suggestions to help me improve, send an email to jaris.a.fenner@gmail.com. Thank you! "
             ],
             "context": [
                 ""
@@ -226,12 +226,15 @@
         {
             "tag": "weather",
             "patterns": [
+                "how is the weather today",
+                "whats the weather",
+                "tell me the weather forecast",
                 "temperature",
                 "weather",
                 "how hot is it"
             ],
             "responses": [
-                "..."
+                "I hope the forecast helps you plan ahead!"
             ]
         },
         {
@@ -298,7 +301,7 @@
                 "recent news"
             ],
             "responses": [
-                "..."
+                "Some pretty interesting news today, huh?"
             ]
         },
         {
