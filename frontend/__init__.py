@@ -1,10 +1,9 @@
 from flask import Flask #type: ignore
+from nltk.stem import WordNetLemmatizer
 from kaybotconfig import Config
 
 app = Flask(__name__)
 app.config.from_object(Config)
-
-from nltk.stem import WordNetLemmatizer
 
 from backend.model import load_local_model
 from backend.preprocess import load_data_files
