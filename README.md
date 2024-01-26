@@ -4,7 +4,7 @@
 
 #### KayBot is an ongoing project aimed at developing a chatbot using TensorFlow Keras. The goal is to create a versatile and intelligent conversational agent that can be used for various applications:  
 - **Chat with the user.**   
-Example promts: *'Who made you?', 'Tell me a joke', 'Ask me a riddle'*  
+Example prompts: *'Who made you?', 'Tell me a joke', 'Ask me a riddle'*  
 - **List all available commands.**    
 Example prompts: *'What can you do?' or 'help'*  
 - **Perform google searches and open new tabs with the results.**    
