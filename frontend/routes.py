@@ -9,11 +9,11 @@ import pytz
 import nltk
 import random
 import requests
-import datetime
 import billboard #type: ignore
 import webbrowser
 import pygame.mixer #type: ignore
 import numpy as np
+from datetime import datetime
 from dotenv import load_dotenv
 from googlesearch import search #type: ignore
 from nltk.stem import WordNetLemmatizer
