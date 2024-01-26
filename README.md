@@ -1,22 +1,37 @@
 # <div align="center">🤖 KayBot 🤖</div>
 
-#### <div align='center'> Multipurpose ChatBot created using Python, capable of helping with daily tasks </div>
+### <div align='center'> Multipurpose ChatBot created using Python, capable of helping with daily tasks </div>
 
-![KayBot Logo](data/kaybot.png)
+#### KayBot is an ongoing project aimed at developing a chatbot using TensorFlow Keras. The goal is to create a versatile and intelligent conversational agent that can be used for various applications:  
+- **Chat with the user.**   
+Example promts: *'Who made you?', 'Tell me a joke', 'Ask me a riddle'*  
+- **List all available commands.**    
+Example prompts: *'What can you do?' or 'help'*  
+- **Perform google searches and open new tabs with the results.**    
+Example prompts: *'google: GitHub'*
+- **Tell the current date and time.**    
+Example prompts: *'Whats the time?', 'date', 'What day is today'*
+- **Inform about the weather in any city.**    
+Example prompts: *'weather: Tokyo', 'weather: Chicago'*
+- **Link to articles of the latest news.**    
+Example prompts: *'latest news', 'news'*
+- **List the top 10 trending songs on the global charts.**    
+Example prompts: *'top songs', 'hot songs', 'songs'*
+- *[Currently bugged and under investigation]* **Keep track of a set timer (in minutes) and ring and alarm when the time is up.**   
+Example prompts: *'timer: 1', 'timer: 10'*
 
-KayBot is an ongoing project aimed at developing a chatbot using TensorFlow Keras. The goal is to create a versatile and intelligent conversational agent that can be used for various applications.
 
 ## Table of Contents
 - [Work in Progress](#work-in-progress)
-- [Files](#files)
-- [Usage](#usage)
+- [Images](#images)
+- [Folder Structure](#folder-structure)
 - [Features](#features)
 - [Dependencies](#dependencies)
 - [Getting Started](#getting-started)
 - [License](#license)
 
 ## Work in Progress
-KayBot is currently in the early stages of development, and the following aspects are being actively worked on:
+KayBot is currently in the development, and the following aspects are being actively worked on:
 - [x] Data Collection and Preprocessing
 - [x] Model Architecture Design
 - [x] Training Pipeline Implementation
@@ -25,11 +40,25 @@ KayBot is currently in the early stages of development, and the following aspect
 - [ ] User Interface and Deployment
 - [ ] Finalizing Github repository
 
-## Files
-tbd
+## Images
+![KayBot Main](data/images/KayBot%20Main.png)
+![KayBot Chat](data/images/KayBot%20Chat.png)
 
-## Usage
-tbd
+## Folder Structure
+- [Folder: backend](./backend/)  
+Contains all the source code in form of python scripts.  
+- [Folder: data](./data/)  
+The chatbots intents and pickle files are stored here.  
+- [Folder: frontend](./frontend/)  
+Houses the HTML templates, as well as the forms and routes in python files.  
+- [Folder: models](./models/)  
+The current and future pre-trained models of the chatbot.  
+- [Folder: notebooks](./notebooks/)  
+Step-by-step documentation of the first modelling attempts.
+- [Files](./)  
+*.gitignore, .gitattributes, .python-version* are contain the usual parameters.  
+*kaybot.py and kaybotconfig.py* are what run and execute the Flask app locally.  
+*Procfile* is currently still in progress and will be used for deployment.  
 
 ## Features
 - [x] Natural Language Processing
